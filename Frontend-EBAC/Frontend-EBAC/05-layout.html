@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+	<head>
+		<title>HTML - Layouts</title>
+		<meta charset="UTF-8">
+		<meta name="vieport" content="width=device-width, initial-scale=1">
+		<style>
+
+			* {
+
+			 box-sizing: border-box;
+
+			}
+
+
+
+			body {
+
+			 font-family: Arial, Helvetica, sans-serif;
+
+			}
+
+
+
+			/* Style the header */
+
+			header {
+
+			 background-color: #666;
+
+			 padding: 30px;
+
+			 text-align: center;
+
+			 font-size: 35px;
+
+			 color: white;
+
+			}
+
+
+
+			/* Create two columns/boxes that floats next to each other */
+
+			nav {
+
+			 float: left;
+
+			 width: 30%;
+
+			  
+
+			 background: #ccc;
+
+			 padding: 20px;
+
+			}
+
+
+
+			/* Style the list inside the menu */
+
+			nav ul {
+
+			 list-style-type: none;
+
+			 padding: 0;
+
+			}
+
+
+
+			article {
+
+			 float: left;
+
+			 padding: 20px;
+
+			 width: 70%;
+
+			 background-color: #f1f1f1;
+
+			}
+
+
+
+			/* Clear floats after the columns */
+
+			section::after {
+
+			 background: #ccc;
+
+			 content: "";
+
+			 display: table;
+
+			 clear: both;
+
+			}
+
+
+
+			/* Style the footer */
+
+			footer {
+
+			 background-color: #777;
+
+			 padding: 10px;
+
+			 text-align: center;
+
+			 color: white;
+
+			}
+
+
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+
+			@media (max-width: 600px) {
+
+			 nav, article {
+
+			  width: 100%;
+
+			  height: auto;
+
+			 }
+
+			}
+
+			</style>
+	</head>
+	<body>
+
+		<header>
+			<h2>Curso Forn-end HTML</h2>
+		</header>
+
+		<section>
+			<nav>
+				<ul>
+					<li><a href="05-html-layout.html">Home</li>
+					<li><a href="#sobre">sobre</li>
+					<li><a href="06-formularios-layout.html">contato</li>
+				</ul>
+			</nav>
+			<article>
+				
+				<h1>Titulo artigos</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sollicitudin id odio sit amet consectetur. Donec sed ultricies erat. Cras volutpat nibh convallis massa mollis dignissim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras malesuada suscipit nulla, quis aliquam est tempor non. Duis odio ante, maximus sit amet felis sed, ultricies eleifend urna. Morbi ac ultrices dui. Nulla nec tortor sit amet diam mollis pellentesque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent facilisis ut justo vel hendrerit. Mauris luctus lectus interdum libero posuere dignissim. Sed a lacus tempor, maximus ligula et, interdum libero. Nam imperdiet eleifend semper.</p>
+
+			</article>
+
+		</section>
+		<footer>
+			<p>Desenvolvido por Ana Carolina Pena</p>
+		</footer>
+
+	</body>
+</html>
