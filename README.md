@@ -5,7 +5,7 @@
 ## Exercício - 09
 
 1. Criar conta no GitHub 
->https://github.com/anacarolinapena
+>https://github.com/anacarolinapena.git
 2. Criar um repositório público: Frontend-EBAC
 
 3. Clocar o repositório criado
